@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 6 - Like / Dislike</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="card">
+        <h1>What do you think of this page?</h1>
+
+        <!-- Step 1: like / dislike buttons with counters -->
+        <section class="votes">
+            <button id="like-btn" class="vote-btn like">👍 Like</button>
+            <span id="like-count" class="count">0</span>
+
+            <button id="dislike-btn" class="vote-btn dislike">👎 Dislike</button>
+            <span id="dislike-count" class="count">0</span>
+        </section>
+        <p id="vote-message" class="message"></p>
+
+        <!-- Step 1: comment input + submit -->
+        <form id="comment-form" class="comment-form">
+            <input type="text" id="comment-input" placeholder="Leave a comment..." autocomplete="off">
+            <button type="submit" id="submit-btn">Submit</button>
+        </form>
+
+        <!-- Step 1: comments section -->
+        <section>
+            <h2>Comments</h2>
+            <ul id="comments-list"></ul>
+        </section>
+
+        <!-- Step 1: reset button -->
+        <button id="reset-btn" class="reset">Reset</button>
+        <p id="reset-message" class="message success"></p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
